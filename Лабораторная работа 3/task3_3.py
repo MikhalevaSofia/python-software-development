@@ -4,7 +4,7 @@ def count_letters(text):# Функция принимает в качестве 
     dict_of_letters = {} # Создаем пустой словарь
     text = text.lower() # Приводим все символы в строке к нижнему регистру
     for symbol in text: # В цикле идем по каждому символу в строке и проверяем, является ли он буквой
-        if symbol.isalpha() == True:
+        if symbol.isalpha():
             dict_of_letters[symbol] = text.count(symbol) # Если символ - буква, то добавляем в словарь пару ключ-значение
     return dict_of_letters # Возвращаем словарь с буквами и их количеством в тексте
 
