@@ -1,9 +1,9 @@
 # TODO Напишите функцию для поиска индекса товара
 
 def find_item_in_list(items, item_for_find): # Функция принимает на вход два аргумента: список товаров и товар, который нужно найти
-    for item in items:
+    for index, item in enumerate(items):
         if item == item_for_find:
-            return items.index(item) # Функция возвращает индекс найденного товара
+            return index # Функция возвращает индекс найденного товара
     return None
 
 
